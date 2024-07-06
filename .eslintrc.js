@@ -7,8 +7,7 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:vue/vue3-essential",
-    "plugin:prettier/recommended",
-    "eslint-config-prettier",
+    "prettier",
   ], // prettier-ignore
   overrides: [
     {

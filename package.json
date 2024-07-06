@@ -17,6 +17,7 @@
     "stylelint-prettier": "^4.0.2"
   },
   "dependencies": {
+    "eslint-config-prettier": "^9.1.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.7.0"
   }
 }
