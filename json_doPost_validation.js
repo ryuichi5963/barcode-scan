@@ -97,7 +97,14 @@ function sheetWrite_(json) {
 
   let obj = [];
 
-  obj = [json.name, json.address, json.gender, json.birthday, json.email, json.inquiry];
+  obj = [
+    json.name,
+    json.address,
+    json.gender,
+    json.birthday,
+    json.email,
+    json.inquiry
+  ]; // prettier-ignore
 
   let lastRow = sheet.getLastRow() + 1;
 
@@ -127,6 +134,12 @@ function sendMail_(result, number) {
   MailApp.sendEmail({
     to: "niemand235@herb.ocn.ne.jp",
     subject: "【管理者宛】問い合わせがありました",
-    body: "[問い合わせ番号：" + number + "] \n" + "問い合わせがありましたので、下記の内容でメールを自動送信しました\n" + "\n" + body,
-  });
+    body:
+    "[問い合わせ番号：" 
+    + number 
+    + "] \n" 
+    + "問い合わせがありましたので、下記の内容でメールを自動送信しました\n" 
+    + "\n" 
+    + body, 
+  }); // prettier-ignore
 }
