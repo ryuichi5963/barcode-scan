@@ -60,7 +60,7 @@
       );
 
       Quagga.onDetected(async (result) => {
-        if (!confirm("コードを登録しますか？")) {
+        if (!confirm("コードを登録しますか？") && result.codeResult.toPrecision(3).startsWith("978")) {
           return;
         }
 
