@@ -76,7 +76,7 @@
         if (response.ok) {
           console.log("コードが正常に送信されました");
         } else {
-          console.error("コードの送信に失敗しました");
+          console.error("コードの送信に失敗しました" + result.codeResult.code);
         }
       });
     </script>
